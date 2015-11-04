@@ -147,13 +147,9 @@ code {
 
 section {
   margin-bottom: 60px;
-  border-bottom: 1px dotted #c9c5cf;
-  padding-bottom: 60px;
 }
 section:first-of-type {
   margin-bottom: 0;
-  border-bottom-width: 0;
-  padding-bottom: 0;
 }
 
 section > img {
@@ -348,6 +344,11 @@ h4 {
 .block-margin {
   padding-top: 150px;
   padding-bottom: 150px;
+}
+
+.section-block {
+  border-bottom: 1px dotted #c9c5cf;
+  padding-bottom: 60px;
 }
 
 .home {
