@@ -10,7 +10,7 @@ form,
 textarea,
 input,
 p {
-  font-family: 'source-sans-pro', 'Source Sans Pro', 'Proxima Nova', "Helvetica Neue", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1,
@@ -24,7 +24,6 @@ h6 {
 
 
 body {
-  font-family: 'Roboto', 'Open-Sans', sans-serif;
   overflow-x: hidden;
   color: #313131;
 }
@@ -112,7 +111,6 @@ pre,
 code,
 pre span,
 code span {
-  font-family: Consolas, "Liberation Mono", 'PT Mono', Courier, monospace;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -193,28 +191,24 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 @media screen and (max-width: 47.5em) {
-    /* line 8, /app/source/stylesheets/includes/_main.scss */
     p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
         margin: 0 0 20px 0;
     }
 }
 
 @media screen and (min-width: 47.5em) {
-    /* line 8, /app/source/stylesheets/includes/_main.scss */
     p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
         margin: 0 0 30px 0;
     }
 }
 
 @media screen and (max-width: 47.5em) {
-    /* line 16, /app/source/stylesheets/includes/_main.scss */
     html, body {
         font-size: 16px;
     }
 }
 
 @media screen and (min-width: 47.5em) {
-    /* line 16, /app/source/stylesheets/includes/_main.scss */
     html, body {
         font-size: 18px;
     }
@@ -265,11 +259,6 @@ h4 {
     background: url('../images/Notebook-1.png') no-repeat ;
     background-position: left bottom;
   }
-  .book .book-bg{
-    background: url('../images/iPad.png') no-repeat;
-    background-position: right bottom;
-  }
-
 }
 @media (max-width: 768px){
   .header-wrapper{
