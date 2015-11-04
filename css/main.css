@@ -104,7 +104,7 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #413b52;
+  color: #6e5eb2;
 }
 a:visited {
   color: #a399cd;
@@ -372,34 +372,31 @@ p.header-sub {
   font-weight: 400;
   font-size: 28px;
 }
-
-.logo span {
-  color: #d66039;
-}
-
 .logo:hover span {
   transform: rotateY(360deg);
   transition: all 1s;
+  color: #a399cd;
 }
-
-.navigation .navbar-nav > li > a {
-  font-size: 18px;
-  font-weight: 400;
-  padding: 15px 15px;
-  margin: 0px 15px;
-  border-bottom: 1px solid transparent;
-}
-
-.navigation .navbar-nav > li > a:hover {
-  border-bottom: 1px solid #d66039;
+.logo span {
+  color: #6e5eb2;
 }
 
 .navigation {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
-  background: #ebebeb;
-  border-radius: 0px;
+  background: #f2f3f7;
+  border-radius: 0;
   padding: 8px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+.navigation .navbar-nav > li > a {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 15px;
+  margin: 0 15px;
+  border-bottom: 1px solid transparent;
+}
+.navigation .navbar-nav > li > a:hover {
+  border-bottom: 1px solid #d66039;
 }
 
 .cta-2 {
@@ -412,7 +409,7 @@ p.header-sub {
 }
 .cta-2 .bttn:hover {
   color: #413b52;
-  background-color: #f1eeed;
+  background-color: #a399cd;
 }
 
 .question h3 {
