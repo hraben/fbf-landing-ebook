@@ -1,0 +1,18 @@
+.cta-2 {
+  color: $text-second-color;
+  padding: 50px 0px;
+  .bttn {
+    margin: 21px auto;
+    display: table;
+    &:hover {
+      color: $text-main-color;
+      background-color: $text-second-color;
+    }
+  }
+}
+
+.subt
+{
+  font-size: 24px;
+  font-weight: 100;
+}

@@ -1,0 +1,120 @@
+body {
+  font-family: 'Roboto', 'Open-Sans', sans-serif;
+  overflow-x: hidden;
+  color: #313131;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+    margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+a {
+  color: #313131;
+}
+
+a.red {
+  border-radius: 0px;
+  background: #d66039;
+  color: #f1eeed;
+  padding: 10px 30px;
+  margin-right: 15px;
+  border: 1px solid #d66039;
+  margin-bottom: 15px;
+}
+
+a.bttn {
+  border-radius: 0px;
+  background: transparent;
+  color: #f1eeed;
+  padding: 10px 30px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+a.bttn:hover {
+  background: #d66039;
+  border-color: #d66039;
+  color: #f1eeed;
+}
+
+a:hover {
+  transition: all .6s;
+  text-decoration: none;
+}
+
+.section-wrapper {
+  padding: 100px 0px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+/*=================================================
+||        13. Media Query
+==================================================*/
+@media (max-width: 992px){
+  .book .section-wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 768px){
+  .home .home-bg{
+    background: url('../images/Notebook-1.png') no-repeat ;
+    background-position: left bottom;
+  }
+  .book .book-bg{
+    background: url('../images/iPad.png') no-repeat;
+    background-position: right bottom;
+  }
+
+}
+@media (max-width: 768px){
+  .header-wrapper{
+    padding-top: 15%;
+  }
+  .blog{
+    text-align: center;
+  }
+  .blog-left{
+    padding: 0 15px;
+    text-align: center;
+  }
+  .contact{
+    text-align: center;
+  }
+}
+@media (max-width: 320px){
+  .header-wrapper{
+    padding: 0;
+  }
+  .home .description{
+    margin: 15px 0;
+    font-size: 14px;
+    padding-right: 15px;
+  }
+
+
+}

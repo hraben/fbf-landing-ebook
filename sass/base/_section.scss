@@ -1,0 +1,34 @@
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2 {
+    margin-bottom: 70px;
+  }
+  .btn {
+    margin-top: 100px;
+  }
+}
+.section-color {
+  background-color: $bg-main-color;
+  color: $text-light;
+}
+.section-light {
+  background-color: $bg-lighter;
+  color: $text-dark;
+}
+.section-gray {
+  background-color: $bg-light;
+  color: $text-dark;
+}
+.section-dark {
+  background-color: $bg-dark;
+  color: $text-light;
+}
+.section-darker {
+  background-color: $bg-darker;
+  color: $text-light;
+}
+.block-margin {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
