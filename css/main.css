@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,400,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 .debug1 {
   background-color: red;
 }
@@ -24,7 +23,7 @@ form,
 textarea,
 input,
 p {
-  font-family: 'source-sans-pro', 'Source Sans Pro', 'Proxima Nova', "Helvetica Neue", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 h1,
@@ -37,7 +36,6 @@ h6 {
 }
 
 body {
-  font-family: 'Roboto', 'Open-Sans', sans-serif;
   overflow-x: hidden;
   color: #313131;
 }
@@ -125,7 +123,6 @@ pre,
 code,
 pre span,
 code span {
-  font-family: Consolas, "Liberation Mono", 'PT Mono', Courier, monospace;
   font-weight: normal;
   line-height: 1.5;
 }
@@ -205,25 +202,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 */
 @media screen and (max-width: 47.5em) {
-  /* line 8, /app/source/stylesheets/includes/_main.scss */
   p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
     margin: 0 0 20px 0;
   }
 }
 @media screen and (min-width: 47.5em) {
-  /* line 8, /app/source/stylesheets/includes/_main.scss */
   p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
     margin: 0 0 30px 0;
   }
 }
 @media screen and (max-width: 47.5em) {
-  /* line 16, /app/source/stylesheets/includes/_main.scss */
   html, body {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 47.5em) {
-  /* line 16, /app/source/stylesheets/includes/_main.scss */
   html, body {
     font-size: 18px;
   }
@@ -269,11 +262,6 @@ h4 {
   .home .home-bg {
     background: url("../images/Notebook-1.png") no-repeat;
     background-position: left bottom;
-  }
-
-  .book .book-bg {
-    background: url("../images/iPad.png") no-repeat;
-    background-position: right bottom;
   }
 }
 @media (max-width: 768px) {
@@ -380,7 +368,6 @@ p.header-sub {
 }
 
 .logo {
-  font-family: 'Roboto Slab', serif;
   display: inline-block;
   font-weight: 400;
   font-size: 28px;
@@ -430,6 +417,7 @@ p.header-sub {
 
 .question h3 {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .chapters-list {
@@ -454,6 +442,7 @@ p.header-sub {
   clear: both;
 }
 .chapters-list li .chapter-number {
+  font-weight: 300;
   float: right;
   color: #aaa9b1;
   font-weight: 300;
@@ -493,10 +482,6 @@ footer {
 
 .social-icons {
   word-spacing: 20px;
-}
-
-.themewagon {
-  text-align: right;
 }
 
 @media (max-width: 992px) {
