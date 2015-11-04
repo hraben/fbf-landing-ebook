@@ -24,11 +24,11 @@
   .navbar-nav>li>a {
     font-size: 18px;
     font-weight: 400;
-    padding: 15px 15px;
+    padding: 15px;
     margin: 0 15px;
     border-bottom: 1px solid transparent;
     &:hover {
-      border-bottom: 1px solid #d66039;
+      border-bottom: 1px solid $bg-main-color;
     }
   }
 }
