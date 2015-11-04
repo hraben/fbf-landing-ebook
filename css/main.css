@@ -106,7 +106,7 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #6e5eb2;
+  color: #413b52;
 }
 a:visited {
   color: #a399cd;
@@ -317,8 +317,8 @@ h4 {
 }
 
 .section-color {
-  background-color: #d66039;
-  color: #fff;
+  background-color: #f2f3f7;
+  color: #000;
 }
 
 .section-light {
@@ -416,7 +416,7 @@ p.header-sub {
 }
 
 .cta-2 {
-  color: #f1eeed;
+  color: #413b52;
   padding: 50px 0px;
 }
 .cta-2 .bttn {
@@ -424,13 +424,8 @@ p.header-sub {
   display: table;
 }
 .cta-2 .bttn:hover {
-  color: #2c97de;
+  color: #413b52;
   background-color: #f1eeed;
-}
-
-.subt {
-  font-size: 24px;
-  font-weight: 100;
 }
 
 .question h3 {
