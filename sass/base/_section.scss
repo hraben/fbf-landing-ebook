@@ -8,12 +8,17 @@
     margin-top: 100px;
   }
 }
+.section-color {
+  background-color: $bg-main-color;
+  color: $text-light;
+}
 .section-light {
   background-color: $bg-lighter;
   color: $text-dark;
 }
 .section-gray {
   background-color: $bg-light;
+  color: $text-dark;
 }
 .section-dark {
   background-color: $bg-dark;
