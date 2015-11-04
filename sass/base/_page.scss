@@ -1,3 +1,28 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+textarea,
+input,
+p {
+  font-family: 'source-sans-pro', 'Source Sans Pro', 'Proxima Nova', "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #413b52;
+}
+
+
 body {
   font-family: 'Roboto', 'Open-Sans', sans-serif;
   overflow-x: hidden;
@@ -63,6 +88,92 @@ a:hover {
   text-decoration: none;
 }
 
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &:link {
+      color: $link;
+  }
+  &:visited {
+    color: $link-visited;
+  }
+  &:active, &:hover {
+    color: $link-hover;
+  }
+}
+
+p,
+blockquote,
+li {
+  line-height: 1.7;
+}
+
+pre,
+code,
+pre span,
+code span {
+  font-family: Consolas, "Liberation Mono", 'PT Mono', Courier, monospace;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+pre {
+  border-top: 1px #c8c6cc solid;
+  border-bottom: 1px #c8c6cc solid;
+  padding: 20px;
+  background: #efeef0;
+  overflow: auto;
+}
+
+code {
+  background: #efeef0;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 75%;
+}
+
+section {
+  margin-bottom: 60px;
+  border-bottom: 1px dotted #c9c5cf;
+  padding-bottom: 60px;
+  &:first-of-type {
+    margin-bottom: 0;
+    border-bottom-width: 0;
+    padding-bottom: 0;
+  }
+}
+
+section > img {
+  display: block;
+  width: 100%;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.caption {
+    padding: 10px;
+    background: #e2e1e4;
+    font-size: 14px;
+    color: #696873;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #413b52;
+}
+
+
 .section-wrapper {
   padding: 100px 0px;
 }
@@ -71,6 +182,79 @@ a:hover {
   font-weight: 400;
 }
 
+/*
+@media screen and (max-width: 47.5em) {
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 30px 0;
+    }
+}
+*/
+
+@media screen and (max-width: 47.5em) {
+    /* line 8, /app/source/stylesheets/includes/_main.scss */
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    /* line 8, /app/source/stylesheets/includes/_main.scss */
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 47.5em) {
+    /* line 16, /app/source/stylesheets/includes/_main.scss */
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    /* line 16, /app/source/stylesheets/includes/_main.scss */
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 47.5em) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 47.5em) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 47.5em) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 47.5em) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
 /*=================================================
 ||        13. Media Query
 ==================================================*/
