@@ -47,8 +47,8 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 300;
   margin-bottom: 0px;
 }
 
@@ -176,7 +176,12 @@ ol li {
   margin-bottom: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #413b52;
 }
 
@@ -231,16 +236,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 48px;
   }
 }
-@media screen and (max-width: 47.5em) {
-  h2 {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 47.5em) {
-  h2 {
-    font-size: 36px;
-  }
-}
 h3 {
   font-size: 24px;
 }
@@ -253,9 +248,8 @@ h4 {
 ||        13. Media Query
 ==================================================*/
 @media (max-width: 992px) {
-  .book .section-wrapper {
-    padding-left: 15px;
-    padding-right: 15px;
+  h2 {
+    font-size: 28px;
   }
 }
 @media (min-width: 768px) {

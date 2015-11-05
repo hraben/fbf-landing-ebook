@@ -1,3 +1,15 @@
 //- error (404)
 
 extends ./includes/_layout
+
+body
+  block content
+    include ./includes/_navigation
+    section.section
+      .container
+        .row
+          .col-md-12
+            h2.text-center 404
+        .row
+          .col-md-12
+            p.text-center Désolé, nous n'avons pas trouvé la page que vous cherchez.
