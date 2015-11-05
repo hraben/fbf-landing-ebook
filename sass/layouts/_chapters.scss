@@ -1,0 +1,44 @@
+.chapters-list {
+  margin: 0;
+  padding: 0;
+  margin: 0 auto;
+  li {
+    column-break-inside: avoid;
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+    border-bottom: 1px dotted #c9c5cf;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+      &:after {
+      clear: both;
+    }
+    .chapter-number {
+      font-weight: 300;
+      float: right;
+      color: #aaa9b1;
+      font-weight: 300;
+    }
+    &.end {
+      visibility: hidden;
+    }
+
+  }
+}
+
+
+@media screen and (min-width: 47.5em) {
+    /* line 268, /app/source/stylesheets/includes/_home.scss */
+    .chapters-list {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 60px;
+        -moz-column-gap: 60px;
+        column-gap: 60px;
+    }
+}
