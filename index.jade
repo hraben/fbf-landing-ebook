@@ -1,6 +1,17 @@
-//- index.jade
+//- index
 
 extends ./includes/_layout
+
+block append content
+  //- include ./includes/_testimonials
+  include ./includes/_muse
+  //- include ./includes/_features
+  include ./includes/_chapters
+  include ./includes/_authors
+  include ./includes/_cta2
+  include ./includes/_faq
+  include ./includes/_contact
+  //- include ./includes/_thankyou
 
 block append jscripts
   include ./includes/_jscripts
