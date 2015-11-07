@@ -1,0 +1,304 @@
+#packages {
+  padding-top: 40px;
+  .team {
+    text-align: center;
+    margin-bottom: 120px;
+  }
+}
+
+.package-page-title {
+  text-align: center;
+  margin-bottom: 100px;
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+}
+
+.package {
+  border: 4px solid #e2e1e4;
+  border-radius: 10px;
+  padding: 80px 0 80px 0;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.package-title {
+  float: right;
+  position: absolute;
+  right: 50%;
+  top: 0px;
+  h2 {
+    background: white;
+    text-align: center;
+    float: left;
+    position: relative;
+    left: 50%;
+    padding: 5px 10px;
+    line-height: 1;
+    span {
+      font-size: 14px;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 9px;
+    }
+    em {
+      display: block;
+      font-weight: 300;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (min-width: 47.5em) {
+  .package .package-item-list {
+      /* For modern browsers */
+      /* For IE 6/7 (trigger hasLayout) */
+      * zoom: 1;
+  }
+
+    /* line 3, /app/source/stylesheets/includes/_mixins.scss */
+    .package .package-item-list:before, .package .package-item-list:after {
+        content: "";
+        display: table;
+    }
+
+    /* line 7, /app/source/stylesheets/includes/_mixins.scss */
+    .package .package-item-list:after {
+        clear: both;
+    }
+}
+
+
+@media screen and (max-width: 47.5em) {
+    /* line 40, /app/source/stylesheets/includes/_packages.scss */
+    .package-title h2 {
+        top: -42px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    /* line 40, /app/source/stylesheets/includes/_packages.scss */
+    .package-title h2 {
+        top: -52px;
+    }
+}
+
+
+/* line 62, /app/source/stylesheets/includes/_packages.scss */
+.package-title h2 em {
+    display: block;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 47.5em) {
+    /* line 62, /app/source/stylesheets/includes/_packages.scss */
+    .package-title h2 em {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    /* line 62, /app/source/stylesheets/includes/_packages.scss */
+    .package-title h2 em {
+        font-size: 48px;
+    }
+}
+
+/* line 75, /app/source/stylesheets/includes/_packages.scss */
+.package-blurb {
+    padding-left: 8.88889%;
+    padding-right: 8.88889%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* line 80, /app/source/stylesheets/includes/_packages.scss */
+.package-blurb p {
+    font-size: 20px;
+}
+
+/* line 84, /app/source/stylesheets/includes/_packages.scss */
+.package-block {
+    margin-bottom: 40px;
+}
+
+/* line 87, /app/source/stylesheets/includes/_packages.scss */
+.package-contents {
+    padding-left: 8.88889%;
+    padding-right: 8.88889%;
+}
+
+/* line 90, /app/source/stylesheets/includes/_packages.scss */
+.package-contents h3 {
+    border-bottom: 1px dotted #c9c5cf;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* line 96, /app/source/stylesheets/includes/_packages.scss */
+.package-contents ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+}
+
+/* line 3, /app/source/stylesheets/includes/_mixins.scss */
+.package-contents ul:before, .package-contents ul:after {
+    content: "";
+    display: table;
+}
+
+/* line 7, /app/source/stylesheets/includes/_mixins.scss */
+.package-contents ul:after {
+    clear: both;
+}
+
+/* line 102, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .coming-soon {
+    text-align: center;
+}
+
+/* line 104, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .coming-soon h3 {
+    border: none;
+    font-size: 24px;
+}
+
+/* line 108, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .coming-soon p {
+    font-size: 18px;
+}
+
+/* line 112, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item {
+    margin-bottom: 30px;
+    float: left;
+}
+
+@media screen and (min-width: 47.5em) {
+    /* line 112, /app/source/stylesheets/includes/_packages.scss */
+    .package-contents .package-item {
+        width: 45.94595%;
+        float: left;
+        margin-right: 8.10811%;
+        display: inline;
+    }
+
+    /* line 172, /app/vendor/bundle/ruby/2.2.0/gems/susy-2.2.2/sass/susy/language/susyone/_grid.scss */
+    .package-contents .package-item:nth-of-type(2n) {
+        float: right;
+        margin-right: 0;
+        * margin-left: -60px;
+    }
+}
+
+/* line 119, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-icon {
+    width: 60px;
+    display: block;
+    float: left;
+}
+
+/* line 123, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-icon img {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+}
+
+/* line 127, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-icon img[src$=".jpg"] {
+    width: 100%;
+    border-radius: 100px;
+}
+
+/* line 133, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-contents {
+    margin-left: 80px;
+    min-height: 91px;
+}
+
+/* line 136, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-contents h4 {
+    margin-bottom: 3px;
+}
+
+/* line 140, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-name {
+    margin-bottom: 5px;
+}
+
+/* line 144, /app/source/stylesheets/includes/_packages.scss */
+.package-contents .package-item .item-description {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* line 155, /app/source/stylesheets/includes/_packages.scss */
+.package-action {
+    float: right;
+    position: relative;
+    right: 50%;
+}
+
+/* line 159, /app/source/stylesheets/includes/_packages.scss */
+.package-action .inner {
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 43px;
+    background: white;
+    border: 4px solid #e2e1e4;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 47.5em) {
+    /* line 159, /app/source/stylesheets/includes/_packages.scss */
+    .package-action .inner {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    /* line 159, /app/source/stylesheets/includes/_packages.scss */
+    .package-action .inner {
+        padding: 10px;
+    }
+}
+
+/* line 174, /app/source/stylesheets/includes/_packages.scss */
+.package-action a {
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+    padding: 0;
+}
+
+/* line 3, /app/source/stylesheets/includes/_mixins.scss */
+.package-action a:before, .package-action a:after {
+    content: "";
+    display: table;
+}
+
+/* line 7, /app/source/stylesheets/includes/_mixins.scss */
+.package-action a:after {
+    clear: both;
+}
+
+/* line 179, /app/source/stylesheets/includes/_packages.scss */
+.package-action .discounted .price {
+    text-decoration: line-through;
+}
+
+/* line 183, /app/source/stylesheets/includes/_packages.scss */
+.packages-upgrading {
+    text-align: center;
+}

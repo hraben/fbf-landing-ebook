@@ -360,10 +360,19 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/packages.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/packages.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/packages.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/packages.jade",
 		"outputAbbreviatedPath": "\/packages.html",
@@ -652,6 +661,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/layouts\/_opening.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_opening.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/layouts\/_packages.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/layouts\/_packages.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_packages.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
