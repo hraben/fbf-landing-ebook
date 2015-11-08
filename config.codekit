@@ -360,6 +360,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/packages.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/packages.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/packages.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -636,6 +645,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sass\/layouts\/_navigation.scss",
 		"outputAbbreviatedPath": "\/sass\/css\/_navigation.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/sass\/layouts\/_note.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sass\/layouts\/_note.scss",
+		"outputAbbreviatedPath": "\/sass\/css\/_note.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
