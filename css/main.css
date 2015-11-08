@@ -1,3 +1,7 @@
+/*
+$button-bg-main-active: ;
+$button-bg-second-active: ;
+*/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 .debug1 {
   background-color: red;
@@ -453,6 +457,264 @@ p.header-sub {
     column-gap: 60px;
   }
 }
+#packages {
+  padding-top: 40px;
+}
+#packages .team {
+  margin-bottom: 120px;
+}
+
+.page-title {
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+.page-title h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+.page-title p {
+  font-size: 22px;
+  color: #a6a6a6;
+}
+
+.package {
+  border: 4px solid #e2e1e4;
+  border-radius: 10px;
+  padding: 80px 0 20px 0;
+  margin-bottom: 100px;
+  position: relative;
+}
+.package:first-of-type {
+  margin-bottom: 120px;
+}
+
+.package-title {
+  float: right;
+  position: absolute;
+  right: 50%;
+  top: -80px;
+}
+.package-title h2 {
+  background: white;
+  float: left;
+  position: relative;
+  left: 50%;
+  padding: 5px 10px;
+  line-height: 1;
+}
+.package-title h2 span {
+  font-size: 14px;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 9px;
+}
+.package-title h2 em {
+  display: block;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 47.5em) {
+  .package .package-item-list {
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+  }
+
+  .package .package-item-list:before, .package .package-item-list:after {
+    content: "";
+    display: table;
+  }
+
+  .package .package-item-list:after {
+    clear: both;
+  }
+}
+@media screen and (max-width: 47.5em) {
+  .package-title h2 {
+    top: -42px;
+  }
+}
+@media screen and (min-width: 47.5em) {
+  .package-title h2 {
+    top: -52px;
+  }
+}
+@media screen and (max-width: 47.5em) {
+  .package-title h2 em {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 47.5em) {
+  .package-title h2 em {
+    font-size: 48px;
+  }
+}
+.package-blurb {
+  padding-left: 8.88889%;
+  padding-right: 8.88889%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.package-blurb p {
+  font-size: 20px;
+}
+
+.package-block {
+  margin-bottom: 40px;
+}
+.package-block h3 {
+  font-weight: 500;
+}
+
+.package-contents {
+  padding-left: 8.88889%;
+  padding-right: 8.88889%;
+}
+.package-contents h3 {
+  border-bottom: 1px dotted #c9c5cf;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.package-contents ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  * zoom: 1;
+}
+.package-contents ul:before, .package-contents ul:after {
+  content: "";
+  display: table;
+}
+.package-contents ul:after {
+  clear: both;
+}
+.package-contents .coming-soon {
+  text-align: center;
+}
+.package-contents .coming-soon h3 {
+  border: none;
+  font-size: 24px;
+}
+.package-contents .coming-soon p {
+  font-size: 18px;
+}
+.package-contents .package-item {
+  margin-bottom: 30px;
+  float: left;
+}
+.package-contents .package-item .item-icon {
+  width: 60px;
+  display: block;
+  float: left;
+}
+.package-contents .package-item .item-icon img {
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+}
+.package-contents .package-item .item-contents {
+  margin-left: 80px;
+  min-height: 91px;
+}
+.package-contents .package-item .item-contents h4 {
+  margin-bottom: 3px;
+}
+.package-contents .package-item .item-name {
+  margin-bottom: 5px;
+}
+.package-contents .package-item .item-description {
+  font-size: 14px;
+  margin: 0;
+}
+
+@media screen and (min-width: 47.5em) {
+  .package-contents .package-item {
+    width: 45.94595%;
+    float: left;
+    margin-right: 8.10811%;
+    display: inline;
+  }
+
+  .package-contents .package-item:nth-of-type(2n) {
+    float: right;
+    margin-right: 0;
+    * margin-left: -60px;
+  }
+}
+.package-action {
+  float: right;
+  position: relative;
+  right: 50%;
+  top: 60px;
+}
+.package-action .inner {
+  float: left;
+  position: relative;
+  left: 50%;
+  top: 0;
+  background: white;
+  border: 4px solid #e2e1e4;
+  border-radius: 10px;
+}
+.package-action a {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  * zoom: 1;
+  padding: 0;
+}
+.package-action a:before, .package-action a:after {
+  content: "";
+  display: table;
+}
+.package-action a:after {
+  clear: both;
+}
+.package-action .discounted .price {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 47.5em) {
+  .package-action .inner {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 47.5em) {
+  .package-action .inner {
+    padding: 10px;
+  }
+}
+.note {
+  background: #fcf9e2;
+  background: -webkit-linear-gradient(325deg, rgba(253, 228, 0, 0.2) 0%, rgba(253, 228, 0, 0.1) 90%);
+  background: linear-gradient(125deg, rgba(253, 228, 0, 0.2) 0%, rgba(253, 228, 0, 0.1) 90%);
+  padding: 30px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+.note p {
+  margin-bottom: 20px;
+}
+.note p:last-child {
+  margin-bottom: 0;
+}
+.note h3 {
+  margin: 0 0 10px 0;
+  border: 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+.note ul {
+  margin: 0;
+}
+.note.chapter {
+  background: #e2e1e4;
+  background: -webkit-linear-gradient(325deg, #e2e0e9 0%, rgba(226, 224, 233, 0.5) 90%);
+  background: linear-gradient(125deg, #e2e0e9 0%, rgba(226, 224, 233, 0.5) 90%);
+}
+
 .contact {
   padding: 75px 0;
 }
@@ -545,88 +807,94 @@ footer {
   }
 }
 */
-/*
-.product-button-left,
-.product-button-right {
-  height: 60px;
-  line-height: 56px;
+.button {
   text-align: center;
-  display: inline-block;
-  color: $text-lighter;
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 0 25px;
-  margin: 25px 0 0;
+  display: block;
+  min-height: 40px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffde00), color-stop(100%, #edc610));
+  background: -webkit-linear-gradient(top, #ffde00, #edc610);
+  background: linear-gradient(to bottom, #ffde00, #edc610);
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
-.product-button-left {
-  border: 2px solid $bg-main-color;
-  background-color: $bg-main-color;
-  margin-right: 10px;
-  i {
-    margin-left: 5px;
-    color: $text-lighter;
-  }
-  &:hover,
-  &:focus {
-    color: $text-lighter;
-    border: 2px solid #33adff;
-    background-color: #33adff;
-  }
-  &:hover i {
-    color: $text-light;
-  }
+.button:link, .button:visited {
+  color: #796419;
 }
-.product-button-right {
-  color: $text-main-color;
-  background-color: transparent;
-  border: 2px solid $bg-main-color;
-  &:hover,
-  &:focus {
-    color: $text-lighter;
-    background-color: $bg-main-color;
-    border: 2px solid $bg-main-color;
-  }
+.button:hover {
+  color: #9d801a !important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffee2d), color-stop(100%, #f7cc04));
+  background: -webkit-linear-gradient(top, #ffee2d, #f7cc04);
+  background: linear-gradient(to bottom, #ffee2d, #f7cc04);
 }
-.product-right {
-  .product-button-right {
-    color: $text-gray;
-    background-color: $bg-lighter;
-    border: 2px solid $bg-lighter;
-    &:hover,
-    &:focus {
-      color: $text-gray;
-      background-color: transparent;
-      border: 2px solid #d9dade;
-    }
-  }
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.button .action {
+  display: block;
+  float: left;
+  line-height: 30px;
+}
+.button .price {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4), -1px 0 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  float: right;
 }
 
-.photo-button,
-.photo-button:focus {
-  height: 60px;
-  line-height: 56px;
-  display: inline-block;
-  background-color: transparent;
-  color: $text-lighter;
-  border: 2px solid rgba(255,255,255,0.75);
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 0 25px;
-  margin-top: 25px;
+.button.medium {
+  width: 200px;
 }
 
-.photo-button:hover {
-  background-color: $blue;
-  color: $text-lighter;
-  border: 2px solid $blue;
+@media screen and (max-width: 47.5em) {
+  .button .action {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
-*/
+@media screen and (min-width: 47.5em) {
+  .button .action {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 47.5em) {
+  .button .price {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 47.5em) {
+  .button .price {
+    padding: 0 10px;
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+.simple-button {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  background: #c9c5cf;
+  padding: 10px 20px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  font-weight: 700;
+  color: #413b52;
+}
+.simple-button:link, .simple-button:visited {
+  color: #413b52;
+}
+.simple-button:hover {
+  color: #f4cd13;
+  background: #322d44;
+}
+
 /*
 a {
   &:hover {

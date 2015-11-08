@@ -2,6 +2,8 @@ $black: #000;
 $black-smooth: #111111;
 $blue:  #2c97de;
 $green: #2cbf6d;
+$gray: #e2e1e4;
+$dark-gray: lighten(gray, 15%);;
 $purple-dark: #6e5eb2;
 $purple-light: #a399cd;
 $red: #d66039;
@@ -31,3 +33,14 @@ $text-lighter:  #fff;
 $text-dark:     #000;
 $text-darker:   $black;
 $text-gray:     #747d93;
+
+$button-bg-main: #ffde00;
+$button-bg-second: #edc610;
+$button-bg-main-hover: #ffee2d;
+$button-bg-second-hover: #f7cc04;
+/*
+$button-bg-main-active: ;
+$button-bg-second-active: ;
+*/
+$button-text: #796419;
+$button-text-hover: #9d801a;

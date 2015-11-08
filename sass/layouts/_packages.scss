@@ -1,0 +1,249 @@
+#packages {
+  padding-top: 40px;
+  .team {
+    margin-bottom: 120px;
+  }
+}
+
+.page-title {
+  margin-bottom: 40px;
+  font-weight: 300;
+  h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+    color: $dark-gray;
+  }
+}
+
+.package {
+  border: 4px solid $gray;
+  border-radius: 10px;
+  padding: 80px 0 20px 0;
+  margin-bottom: 100px;
+  position: relative;
+  &:first-of-type {
+    margin-bottom: 120px;
+  }
+}
+
+.package-title {
+  float: right;
+  position: absolute;
+  right: 50%;
+  top: -80px;
+  h2 {
+    background: white;
+    float: left;
+    position: relative;
+    left: 50%;
+    padding: 5px 10px;
+    line-height: 1;
+    span {
+      font-size: 14px;
+      display: block;
+      font-weight: 300;
+      margin-bottom: 9px;
+    }
+    em {
+      display: block;
+      font-weight: 300;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (min-width: 47.5em) {
+  .package .package-item-list {
+      /* For modern browsers */
+      /* For IE 6/7 (trigger hasLayout) */
+      * zoom: 1;
+  }
+
+
+    .package .package-item-list:before, .package .package-item-list:after {
+        content: "";
+        display: table;
+    }
+
+
+    .package .package-item-list:after {
+        clear: both;
+    }
+}
+
+
+@media screen and (max-width: 47.5em) {
+
+    .package-title h2 {
+        top: -42px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    .package-title h2 {
+        top: -52px;
+    }
+}
+
+@media screen and (max-width: 47.5em) {
+    .package-title h2 em {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    .package-title h2 em {
+        font-size: 48px;
+    }
+}
+
+.package-blurb {
+  padding-left: 8.88889%;
+  padding-right: 8.88889%;
+  text-align: center;
+  margin-bottom: 60px;
+  p {
+    font-size: 20px;
+  }
+}
+
+.package-block {
+  margin-bottom: 40px;
+  h3 {
+    font-weight: 500;
+  }
+}
+
+.package-contents {
+  padding-left: 8.88889%;
+  padding-right: 8.88889%;
+  h3 {
+    border-bottom: 1px dotted #c9c5cf;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  .coming-soon {
+    text-align: center;
+    h3 {
+      border: none;
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .package-item {
+    margin-bottom: 30px;
+    float: left;
+    .item-icon {
+      width: 60px;
+      display: block;
+      float: left;
+      img {
+        margin: 0 auto;
+        width: 80%;
+        display: block;
+      }
+    }
+    .item-contents {
+      margin-left: 80px;
+      min-height: 91px;
+      h4 {
+        margin-bottom: 3px;
+      }
+    }
+    .item-name {
+      margin-bottom: 5px;
+    }
+    .item-description {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 47.5em) {
+
+    .package-contents .package-item {
+        width: 45.94595%;
+        float: left;
+        margin-right: 8.10811%;
+        display: inline;
+    }
+
+
+    .package-contents .package-item:nth-of-type(2n) {
+        float: right;
+        margin-right: 0;
+        * margin-left: -60px;
+    }
+}
+
+
+
+.package-action {
+  float: right;
+  position: relative;
+  right: 50%;
+  top: 60px;
+  .inner {
+    float: left;
+    position: relative;
+    left: 50%;
+    top: 0;
+    background: white;
+    border: 4px solid #e2e1e4;
+    border-radius: 10px;
+  }
+  a {
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+    padding: 0;
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  .discounted {
+    .price {
+      text-decoration: line-through;
+    }
+  }
+}
+
+
+@media screen and (max-width: 47.5em) {
+
+    .package-action .inner {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+
+    .package-action .inner {
+        padding: 10px;
+    }
+}
