@@ -473,7 +473,7 @@ p.header-sub {
   border: 4px solid #e2e1e4;
   border-radius: 10px;
   padding: 80px 0 80px 0;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   position: relative;
 }
 
@@ -481,7 +481,7 @@ p.header-sub {
   float: right;
   position: absolute;
   right: 50%;
-  top: 0px;
+  top: -80px;
 }
 .package-title h2 {
   background: white;
