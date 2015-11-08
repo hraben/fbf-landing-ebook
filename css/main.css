@@ -1,3 +1,7 @@
+/*
+$button-bg-main-active: ;
+$button-bg-second-active: ;
+*/
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500);
 .debug1 {
   background-color: red;
@@ -472,7 +476,7 @@ p.header-sub {
 .package {
   border: 4px solid #e2e1e4;
   border-radius: 10px;
-  padding: 80px 0 80px 0;
+  padding: 80px 0 20px 0;
   margin-bottom: 100px;
   position: relative;
 }
@@ -511,80 +515,58 @@ p.header-sub {
     * zoom: 1;
   }
 
-  /* line 3, /app/source/stylesheets/includes/_mixins.scss */
   .package .package-item-list:before, .package .package-item-list:after {
     content: "";
     display: table;
   }
 
-  /* line 7, /app/source/stylesheets/includes/_mixins.scss */
   .package .package-item-list:after {
     clear: both;
   }
 }
 @media screen and (max-width: 47.5em) {
-  /* line 40, /app/source/stylesheets/includes/_packages.scss */
   .package-title h2 {
     top: -42px;
   }
 }
 @media screen and (min-width: 47.5em) {
-  /* line 40, /app/source/stylesheets/includes/_packages.scss */
   .package-title h2 {
     top: -52px;
   }
 }
-/* line 62, /app/source/stylesheets/includes/_packages.scss */
-.package-title h2 em {
-  display: block;
-  font-weight: 300;
-  white-space: nowrap;
-}
-
 @media screen and (max-width: 47.5em) {
-  /* line 62, /app/source/stylesheets/includes/_packages.scss */
   .package-title h2 em {
     font-size: 36px;
   }
 }
 @media screen and (min-width: 47.5em) {
-  /* line 62, /app/source/stylesheets/includes/_packages.scss */
   .package-title h2 em {
     font-size: 48px;
   }
 }
-/* line 75, /app/source/stylesheets/includes/_packages.scss */
 .package-blurb {
   padding-left: 8.88889%;
   padding-right: 8.88889%;
   text-align: center;
   margin-bottom: 60px;
 }
-
-/* line 80, /app/source/stylesheets/includes/_packages.scss */
 .package-blurb p {
   font-size: 20px;
 }
 
-/* line 84, /app/source/stylesheets/includes/_packages.scss */
 .package-block {
   margin-bottom: 40px;
 }
 
-/* line 87, /app/source/stylesheets/includes/_packages.scss */
 .package-contents {
   padding-left: 8.88889%;
   padding-right: 8.88889%;
 }
-
-/* line 90, /app/source/stylesheets/includes/_packages.scss */
 .package-contents h3 {
   border-bottom: 1px dotted #c9c5cf;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-
-/* line 96, /app/source/stylesheets/includes/_packages.scss */
 .package-contents ul {
   list-style-type: none;
   padding: 0;
@@ -593,42 +575,53 @@ p.header-sub {
   /* For IE 6/7 (trigger hasLayout) */
   * zoom: 1;
 }
-
-/* line 3, /app/source/stylesheets/includes/_mixins.scss */
 .package-contents ul:before, .package-contents ul:after {
   content: "";
   display: table;
 }
-
-/* line 7, /app/source/stylesheets/includes/_mixins.scss */
 .package-contents ul:after {
   clear: both;
 }
-
-/* line 102, /app/source/stylesheets/includes/_packages.scss */
 .package-contents .coming-soon {
   text-align: center;
 }
-
-/* line 104, /app/source/stylesheets/includes/_packages.scss */
 .package-contents .coming-soon h3 {
   border: none;
   font-size: 24px;
 }
-
-/* line 108, /app/source/stylesheets/includes/_packages.scss */
 .package-contents .coming-soon p {
   font-size: 18px;
 }
-
-/* line 112, /app/source/stylesheets/includes/_packages.scss */
 .package-contents .package-item {
   margin-bottom: 30px;
   float: left;
 }
+.package-contents .package-item .item-icon {
+  width: 60px;
+  display: block;
+  float: left;
+}
+.package-contents .package-item .item-icon img {
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+}
+.package-contents .package-item .item-contents {
+  margin-left: 80px;
+  min-height: 91px;
+}
+.package-contents .package-item .item-contents h4 {
+  margin-bottom: 3px;
+}
+.package-contents .package-item .item-name {
+  margin-bottom: 5px;
+}
+.package-contents .package-item .item-description {
+  font-size: 14px;
+  margin: 0;
+}
 
 @media screen and (min-width: 47.5em) {
-  /* line 112, /app/source/stylesheets/includes/_packages.scss */
   .package-contents .package-item {
     width: 45.94595%;
     float: left;
@@ -636,114 +629,54 @@ p.header-sub {
     display: inline;
   }
 
-  /* line 172, /app/vendor/bundle/ruby/2.2.0/gems/susy-2.2.2/sass/susy/language/susyone/_grid.scss */
   .package-contents .package-item:nth-of-type(2n) {
     float: right;
     margin-right: 0;
     * margin-left: -60px;
   }
 }
-/* line 119, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-icon {
-  width: 60px;
-  display: block;
-  float: left;
-}
-
-/* line 123, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-icon img {
-  margin: 0 auto;
-  width: 80%;
-  display: block;
-}
-
-/* line 127, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-icon img[src$=".jpg"] {
-  width: 100%;
-  border-radius: 100px;
-}
-
-/* line 133, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-contents {
-  margin-left: 80px;
-  min-height: 91px;
-}
-
-/* line 136, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-contents h4 {
-  margin-bottom: 3px;
-}
-
-/* line 140, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-name {
-  margin-bottom: 5px;
-}
-
-/* line 144, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-description {
-  font-size: 14px;
-  margin: 0;
-}
-
-/* line 155, /app/source/stylesheets/includes/_packages.scss */
 .package-action {
   float: right;
   position: relative;
   right: 50%;
+  top: 60px;
 }
-
-/* line 159, /app/source/stylesheets/includes/_packages.scss */
 .package-action .inner {
   float: left;
   position: relative;
   left: 50%;
-  top: 43px;
+  top: 0;
   background: white;
   border: 4px solid #e2e1e4;
   border-radius: 10px;
 }
-
-@media screen and (max-width: 47.5em) {
-  /* line 159, /app/source/stylesheets/includes/_packages.scss */
-  .package-action .inner {
-    padding: 5px;
-  }
-}
-@media screen and (min-width: 47.5em) {
-  /* line 159, /app/source/stylesheets/includes/_packages.scss */
-  .package-action .inner {
-    padding: 10px;
-  }
-}
-/* line 174, /app/source/stylesheets/includes/_packages.scss */
 .package-action a {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
   * zoom: 1;
   padding: 0;
 }
-
-/* line 3, /app/source/stylesheets/includes/_mixins.scss */
 .package-action a:before, .package-action a:after {
   content: "";
   display: table;
 }
-
-/* line 7, /app/source/stylesheets/includes/_mixins.scss */
 .package-action a:after {
   clear: both;
 }
-
-/* line 179, /app/source/stylesheets/includes/_packages.scss */
 .package-action .discounted .price {
   text-decoration: line-through;
 }
 
-/* line 183, /app/source/stylesheets/includes/_packages.scss */
-.packages-upgrading {
-  text-align: center;
+@media screen and (max-width: 47.5em) {
+  .package-action .inner {
+    padding: 5px;
+  }
 }
-
+@media screen and (min-width: 47.5em) {
+  .package-action .inner {
+    padding: 10px;
+  }
+}
 .contact {
   padding: 75px 0;
 }
@@ -836,88 +769,94 @@ footer {
   }
 }
 */
-/*
-.product-button-left,
-.product-button-right {
-  height: 60px;
-  line-height: 56px;
+.button {
   text-align: center;
-  display: inline-block;
-  color: $text-lighter;
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 0 25px;
-  margin: 25px 0 0;
+  display: block;
+  min-height: 40px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffde00), color-stop(100%, #edc610));
+  background: -webkit-linear-gradient(top, #ffde00, #edc610);
+  background: linear-gradient(to bottom, #ffde00, #edc610);
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
 }
-.product-button-left {
-  border: 2px solid $bg-main-color;
-  background-color: $bg-main-color;
-  margin-right: 10px;
-  i {
-    margin-left: 5px;
-    color: $text-lighter;
-  }
-  &:hover,
-  &:focus {
-    color: $text-lighter;
-    border: 2px solid #33adff;
-    background-color: #33adff;
-  }
-  &:hover i {
-    color: $text-light;
-  }
+.button:link, .button:visited {
+  color: #796419;
 }
-.product-button-right {
-  color: $text-main-color;
-  background-color: transparent;
-  border: 2px solid $bg-main-color;
-  &:hover,
-  &:focus {
-    color: $text-lighter;
-    background-color: $bg-main-color;
-    border: 2px solid $bg-main-color;
-  }
+.button:hover {
+  color: #9d801a !important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffee2d), color-stop(100%, #f7cc04));
+  background: -webkit-linear-gradient(top, #ffee2d, #f7cc04);
+  background: linear-gradient(to bottom, #ffee2d, #f7cc04);
 }
-.product-right {
-  .product-button-right {
-    color: $text-gray;
-    background-color: $bg-lighter;
-    border: 2px solid $bg-lighter;
-    &:hover,
-    &:focus {
-      color: $text-gray;
-      background-color: transparent;
-      border: 2px solid #d9dade;
-    }
-  }
+.button:active {
+  position: relative;
+  top: 1px;
+}
+.button .action {
+  display: block;
+  float: left;
+  line-height: 30px;
+}
+.button .price {
+  box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4), -1px 0 0 rgba(0, 0, 0, 0.2);
+  display: block;
+  float: right;
 }
 
-.photo-button,
-.photo-button:focus {
-  height: 60px;
-  line-height: 56px;
-  display: inline-block;
-  background-color: transparent;
-  color: $text-lighter;
-  border: 2px solid rgba(255,255,255,0.75);
-  font-weight: 700;
-  text-transform: uppercase;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 0 25px;
-  margin-top: 25px;
+.button.medium {
+  width: 200px;
 }
 
-.photo-button:hover {
-  background-color: $blue;
-  color: $text-lighter;
-  border: 2px solid $blue;
+@media screen and (max-width: 47.5em) {
+  .button .action {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
-*/
+@media screen and (min-width: 47.5em) {
+  .button .action {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 47.5em) {
+  .button .price {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+@media screen and (min-width: 47.5em) {
+  .button .price {
+    padding: 0 10px;
+    font-size: 24px;
+    line-height: 50px;
+  }
+}
+.simple-button {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  background: #c9c5cf;
+  padding: 10px 20px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  font-weight: 700;
+  color: #413b52;
+}
+.simple-button:link, .simple-button:visited {
+  color: #413b52;
+}
+.simple-button:hover {
+  color: #f4cd13;
+  background: #322d44;
+}
+
 /*
 a {
   &:hover {

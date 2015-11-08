@@ -17,7 +17,7 @@
 .package {
   border: 4px solid #e2e1e4;
   border-radius: 10px;
-  padding: 80px 0 80px 0;
+  padding: 80px 0 20px 0;
   margin-bottom: 100px;
   position: relative;
 }
@@ -56,13 +56,13 @@
       * zoom: 1;
   }
 
-    /* line 3, /app/source/stylesheets/includes/_mixins.scss */
+
     .package .package-item-list:before, .package .package-item-list:after {
         content: "";
         display: table;
     }
 
-    /* line 7, /app/source/stylesheets/includes/_mixins.scss */
+
     .package .package-item-list:after {
         clear: both;
     }
@@ -70,117 +70,109 @@
 
 
 @media screen and (max-width: 47.5em) {
-    /* line 40, /app/source/stylesheets/includes/_packages.scss */
+
     .package-title h2 {
         top: -42px;
     }
 }
 
 @media screen and (min-width: 47.5em) {
-    /* line 40, /app/source/stylesheets/includes/_packages.scss */
     .package-title h2 {
         top: -52px;
     }
 }
 
-
-/* line 62, /app/source/stylesheets/includes/_packages.scss */
-.package-title h2 em {
-    display: block;
-    font-weight: 300;
-    white-space: nowrap;
-}
-
 @media screen and (max-width: 47.5em) {
-    /* line 62, /app/source/stylesheets/includes/_packages.scss */
     .package-title h2 em {
         font-size: 36px;
     }
 }
 
 @media screen and (min-width: 47.5em) {
-    /* line 62, /app/source/stylesheets/includes/_packages.scss */
     .package-title h2 em {
         font-size: 48px;
     }
 }
 
-/* line 75, /app/source/stylesheets/includes/_packages.scss */
 .package-blurb {
-    padding-left: 8.88889%;
-    padding-right: 8.88889%;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-/* line 80, /app/source/stylesheets/includes/_packages.scss */
-.package-blurb p {
+  padding-left: 8.88889%;
+  padding-right: 8.88889%;
+  text-align: center;
+  margin-bottom: 60px;
+  p {
     font-size: 20px;
+  }
 }
 
-/* line 84, /app/source/stylesheets/includes/_packages.scss */
 .package-block {
     margin-bottom: 40px;
 }
 
-/* line 87, /app/source/stylesheets/includes/_packages.scss */
 .package-contents {
-    padding-left: 8.88889%;
-    padding-right: 8.88889%;
-}
-
-/* line 90, /app/source/stylesheets/includes/_packages.scss */
-.package-contents h3 {
+  padding-left: 8.88889%;
+  padding-right: 8.88889%;
+  h3 {
     border-bottom: 1px dotted #c9c5cf;
     padding-bottom: 10px;
     margin-bottom: 10px;
-}
-
-/* line 96, /app/source/stylesheets/includes/_packages.scss */
-.package-contents ul {
+  }
+  ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     /* For modern browsers */
     /* For IE 6/7 (trigger hasLayout) */
     * zoom: 1;
-}
-
-/* line 3, /app/source/stylesheets/includes/_mixins.scss */
-.package-contents ul:before, .package-contents ul:after {
-    content: "";
-    display: table;
-}
-
-/* line 7, /app/source/stylesheets/includes/_mixins.scss */
-.package-contents ul:after {
-    clear: both;
-}
-
-/* line 102, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .coming-soon {
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  .coming-soon {
     text-align: center;
-}
-
-/* line 104, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .coming-soon h3 {
-    border: none;
-    font-size: 24px;
-}
-
-/* line 108, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .coming-soon p {
-    font-size: 18px;
-}
-
-/* line 112, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item {
+    h3 {
+      border: none;
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .package-item {
     margin-bottom: 30px;
     float: left;
+    .item-icon {
+      width: 60px;
+      display: block;
+      float: left;
+      img {
+        margin: 0 auto;
+        width: 80%;
+        display: block;
+      }
+    }
+    .item-contents {
+      margin-left: 80px;
+      min-height: 91px;
+      h4 {
+        margin-bottom: 3px;
+      }
+    }
+    .item-name {
+      margin-bottom: 5px;
+    }
+    .item-description {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
 }
 
 @media screen and (min-width: 47.5em) {
-    /* line 112, /app/source/stylesheets/includes/_packages.scss */
+
     .package-contents .package-item {
         width: 45.94595%;
         float: left;
@@ -188,7 +180,7 @@
         display: inline;
     }
 
-    /* line 172, /app/vendor/bundle/ruby/2.2.0/gems/susy-2.2.2/sass/susy/language/susyone/_grid.scss */
+
     .package-contents .package-item:nth-of-type(2n) {
         float: right;
         margin-right: 0;
@@ -196,105 +188,53 @@
     }
 }
 
-/* line 119, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-icon {
-    width: 60px;
-    display: block;
-    float: left;
-}
 
-/* line 123, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-icon img {
-    margin: 0 auto;
-    width: 80%;
-    display: block;
-}
 
-/* line 127, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-icon img[src$=".jpg"] {
-    width: 100%;
-    border-radius: 100px;
-}
-
-/* line 133, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-contents {
-    margin-left: 80px;
-    min-height: 91px;
-}
-
-/* line 136, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-contents h4 {
-    margin-bottom: 3px;
-}
-
-/* line 140, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-name {
-    margin-bottom: 5px;
-}
-
-/* line 144, /app/source/stylesheets/includes/_packages.scss */
-.package-contents .package-item .item-description {
-    font-size: 14px;
-    margin: 0;
-}
-
-/* line 155, /app/source/stylesheets/includes/_packages.scss */
 .package-action {
-    float: right;
-    position: relative;
-    right: 50%;
-}
-
-/* line 159, /app/source/stylesheets/includes/_packages.scss */
-.package-action .inner {
+  float: right;
+  position: relative;
+  right: 50%;
+  top: 60px;
+  .inner {
     float: left;
     position: relative;
     left: 50%;
-    top: 43px;
+    top: 0;
     background: white;
     border: 4px solid #e2e1e4;
     border-radius: 10px;
+  }
+  a {
+    /* For modern browsers */
+    /* For IE 6/7 (trigger hasLayout) */
+    * zoom: 1;
+    padding: 0;
+    &:before, &:after {
+      content: "";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  .discounted {
+    .price {
+      text-decoration: line-through;
+    }
+  }
 }
 
+
 @media screen and (max-width: 47.5em) {
-    /* line 159, /app/source/stylesheets/includes/_packages.scss */
+
     .package-action .inner {
         padding: 5px;
     }
 }
 
 @media screen and (min-width: 47.5em) {
-    /* line 159, /app/source/stylesheets/includes/_packages.scss */
+
     .package-action .inner {
         padding: 10px;
     }
-}
-
-/* line 174, /app/source/stylesheets/includes/_packages.scss */
-.package-action a {
-    /* For modern browsers */
-    /* For IE 6/7 (trigger hasLayout) */
-    * zoom: 1;
-    padding: 0;
-}
-
-/* line 3, /app/source/stylesheets/includes/_mixins.scss */
-.package-action a:before, .package-action a:after {
-    content: "";
-    display: table;
-}
-
-/* line 7, /app/source/stylesheets/includes/_mixins.scss */
-.package-action a:after {
-    clear: both;
-}
-
-/* line 179, /app/source/stylesheets/includes/_packages.scss */
-.package-action .discounted .price {
-    text-decoration: line-through;
-}
-
-/* line 183, /app/source/stylesheets/includes/_packages.scss */
-.packages-upgrading {
-    text-align: center;
 }
