@@ -20,6 +20,9 @@
   padding: 80px 0 20px 0;
   margin-bottom: 100px;
   position: relative;
+  &:first-of-type {
+    margin-bottom: 120px;
+  }
 }
 
 .package-title {
@@ -37,7 +40,6 @@
     span {
       font-size: 14px;
       display: block;
-      text-transform: uppercase;
       font-weight: 300;
       margin-bottom: 9px;
     }
@@ -105,7 +107,10 @@
 }
 
 .package-block {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
+  h3 {
+    font-weight: 500;
+  }
 }
 
 .package-contents {

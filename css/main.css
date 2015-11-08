@@ -480,6 +480,9 @@ p.header-sub {
   margin-bottom: 100px;
   position: relative;
 }
+.package:first-of-type {
+  margin-bottom: 120px;
+}
 
 .package-title {
   float: right;
@@ -498,7 +501,6 @@ p.header-sub {
 .package-title h2 span {
   font-size: 14px;
   display: block;
-  text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 9px;
 }
@@ -556,6 +558,9 @@ p.header-sub {
 
 .package-block {
   margin-bottom: 40px;
+}
+.package-block h3 {
+  font-weight: 500;
 }
 
 .package-contents {
