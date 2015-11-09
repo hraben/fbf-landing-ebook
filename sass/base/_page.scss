@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #413b52;
+  color: $text-main-color;
 }
 
 
@@ -62,8 +62,8 @@ a.bttn {
 }
 
 a.bttn:hover {
-  background: #d66039;
-  border-color: #d66039;
+  background: $bg-main-color;
+  border-color: $bg-main-color;
   color: #f1eeed;
 }
 

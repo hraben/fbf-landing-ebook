@@ -78,8 +78,8 @@ a.bttn {
 }
 
 a.bttn:hover {
-  background: #d66039;
-  border-color: #d66039;
+  background: #6e5eb2;
+  border-color: #6e5eb2;
   color: #f1eeed;
 }
 
@@ -343,6 +343,7 @@ p.header-sub {
   font-size: 24px;
   font-weight: 400;
   color: #a9a7a6;
+  margin-top: 0;
 }
 
 .home .description {
