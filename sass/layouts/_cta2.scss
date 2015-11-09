@@ -1,0 +1,12 @@
+.cta-2 {
+  color: $text-main-color;
+  padding: 50px 0px;
+  .bttn {
+    margin: 21px auto;
+    display: table;
+    &:hover {
+      color: $text-main-color;
+      background-color: $text-second-color;
+    }
+  }
+}

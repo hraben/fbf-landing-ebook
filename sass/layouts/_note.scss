@@ -1,0 +1,28 @@
+.note {
+  background: #fcf9e2;
+  background: -webkit-linear-gradient(325deg, rgba(253, 228, 0, 0.2) 0%, rgba(253, 228, 0, 0.1) 90%);
+  background: linear-gradient(125deg, rgba(253, 228, 0, 0.2) 0%, rgba(253, 228, 0, 0.1) 90%);
+  padding: 30px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  p {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    margin: 0 0 10px 0;
+    border: 0;
+    font-size: 24px;
+    font-weight: 800;
+  }
+  ul {
+    margin: 0;
+  }
+  &.chapter {
+    background: #e2e1e4;
+    background: -webkit-linear-gradient(325deg, #e2e0e9 0%, rgba(226, 224, 233, 0.5) 90%);
+    background: linear-gradient(125deg, #e2e0e9 0%, rgba(226, 224, 233, 0.5) 90%);
+  }
+}

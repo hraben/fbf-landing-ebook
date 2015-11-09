@@ -1,0 +1,281 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+textarea,
+input,
+p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #413b52;
+}
+
+
+body {
+  overflow-x: hidden;
+  color: #313131;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+a {
+  color: #313131;
+}
+
+a.red {
+  border-radius: 0px;
+  background: #d66039;
+  color: #f1eeed;
+  padding: 10px 30px;
+  margin-right: 15px;
+  border: 1px solid #d66039;
+  margin-bottom: 15px;
+}
+
+a.bttn {
+  border-radius: 0px;
+  background: transparent;
+  color: #f1eeed;
+  padding: 10px 30px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+a.bttn:hover {
+  background: #d66039;
+  border-color: #d66039;
+  color: #f1eeed;
+}
+
+a:hover {
+  transition: all .6s;
+  text-decoration: none;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  &:link {
+    color: $link;
+  }
+  &:visited {
+    color: $link-visited;
+  }
+  &:active, &:hover {
+    color: $link-hover;
+  }
+}
+
+p,
+blockquote,
+li {
+  line-height: 1.7;
+}
+
+pre,
+code,
+pre span,
+code span {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+pre {
+  border-top: 1px #c8c6cc solid;
+  border-bottom: 1px #c8c6cc solid;
+  padding: 20px;
+  background: #efeef0;
+  overflow: auto;
+}
+
+code {
+  background: #efeef0;
+  display: inline-block;
+  padding: 0px 5px;
+  font-size: 75%;
+}
+
+section {
+  margin-bottom: 60px;
+  &:first-of-type {
+    margin-bottom: 0;
+  }
+}
+
+section > img {
+  display: block;
+  width: 100%;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.caption {
+    padding: 10px;
+    background: #e2e1e4;
+    font-size: 14px;
+    color: #696873;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #413b52;
+}
+
+.section-wrapper {
+  padding: 100px 0px;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+/*
+@media screen and (max-width: 47.5em) {
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 30px 0;
+    }
+}
+*/
+
+@media screen and (max-width: 47.5em) {
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    p, h1, h2, h3, h4, h5, h6, blockquote, ul, ol {
+        margin: 0 0 30px 0;
+    }
+}
+
+@media screen and (max-width: 47.5em) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 47.5em) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 47.5em) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+/*=================================================
+||        13. Media Query
+==================================================*/
+@media (max-width: 992px){
+  h2 {
+    font-size: 28px;
+  }
+}
+@media (min-width: 768px){
+  .home .home-bg{
+    background: url('../images/Notebook-1.png') no-repeat ;
+    background-position: left bottom;
+  }
+}
+@media (max-width: 768px){
+  .header-wrapper{
+    padding-top: 15%;
+  }
+  .blog{
+    text-align: center;
+  }
+  .blog-left{
+    padding: 0 15px;
+    text-align: center;
+  }
+  .contact{
+    text-align: center;
+  }
+}
+@media (max-width: 320px){
+  .header-wrapper{
+    padding: 0;
+  }
+  .home .description{
+    margin: 15px 0;
+    font-size: 14px;
+    padding-right: 15px;
+  }
+
+
+}

@@ -1,0 +1,91 @@
+.button {
+  text-align: center;
+  display: block;
+  min-height: 40px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $button-bg-main), color-stop(100%, $button-bg-second));
+  background: -webkit-linear-gradient(top, $button-bg-main, $button-bg-second);
+  background: linear-gradient(to bottom, $button-bg-main, $button-bg-second);
+  border: 0;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+  &:link, &:visited {
+    color: $button-text;
+  }
+  &:hover {
+    color: $button-text-hover !important;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $button-bg-main-hover), color-stop(100%, $button-bg-second-hover));
+    background: -webkit-linear-gradient(top, $button-bg-main-hover, $button-bg-second-hover);
+    background: linear-gradient(to bottom, $button-bg-main-hover, $button-bg-second-hover);
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+  .action {
+    display: block;
+    float: left;
+    line-height: 30px;
+  }
+  .price {
+    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.4), -1px 0 0 rgba(0, 0, 0, 0.2);
+    display: block;
+    float: right;
+  }
+}
+
+.button.medium {
+    width: 200px;
+}
+
+@media screen and (max-width: 47.5em) {
+    .button .action {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    .button .action {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 47.5em) {
+    .button .price {
+        padding: 5px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    .button .price {
+        padding: 0 10px;
+        font-size: 24px;
+        line-height: 50px;
+    }
+}
+
+.simple-button {
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  border-radius: 3px;
+  border: none;
+  background: #c9c5cf;
+  padding: 10px 20px;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  font-weight: 700;
+  color: #413b52;
+  &:link, &:visited {
+    color: #413b52;
+  }
+  &:hover {
+    color: #f4cd13;
+    background: #322d44;
+  }
+}
