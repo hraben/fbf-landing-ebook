@@ -730,18 +730,12 @@ footer {
   padding: 15px 0px;
   color: #000;
   font-size: 16px;
-  background-color: #e3e3e3;
 }
 
 .social-icons {
   word-spacing: 20px;
 }
 
-@media (max-width: 992px) {
-  footer {
-    text-align: center;
-  }
-}
 /*
 footer {
   .opening {
@@ -761,7 +755,8 @@ footer {
   }
   padding: 50px 0;
 }
-
+*/
+/*
 .copyrights p {
   font-size: 0.9em;
   line-height: 40px;
@@ -776,37 +771,52 @@ footer {
     }
   }
 }
-
-.footer-socials {
-  ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style-type: none;
-  }
-  li {
-    display: inline-block;
-    margin-left: 10px;
-    a {
-      width: 40px;
-      height: 40px;
-      display: inline-block;
-      line-height: 40px;
-      text-align: center;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      border-radius: 4px;
-      background-color: $bg-gray;
-      color: $text-light;
-      font-size: 1.25em;
-      &:hover {
-        background-color: $bg-light;
-        color: $text-gray;
-      }
-    }
-  }
-}
 */
+.footer-socials ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer-socials li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.footer-socials li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #747d93;
+  font-size: 1.25em;
+}
+.footer-socials li a:hover {
+  background-color: #f2f3f7;
+  color: #747d93;
+}
+.footer-socials li a i.fa-facebook-official:hover {
+  color: #3b5998;
+}
+.footer-socials li a i.fa-twitter:hover {
+  color: #55acee;
+}
+.footer-socials li a i.fa-google-plus:hover {
+  color: #dc4e41;
+}
+.footer-socials li a i.fa-pinterest:hover {
+  color: #bd081c;
+}
+.footer-socials li a i.fa-youtube:hover {
+  color: #cd201f;
+}
+.footer-socials li a i.fa-github:hover {
+  color: #000;
+}
+
 .button {
   text-align: center;
   display: block;
