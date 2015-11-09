@@ -1,0 +1,53 @@
+.author:before, .author:after {
+    content: "";
+    display: table;
+}
+
+.author:after {
+    clear: both;
+}
+
+@media screen and (max-width: 47.5em) {
+    .author {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 47.5em) {
+    .author {
+        float: left;
+        display: inline;
+    }
+
+    .author:nth-child(2n) {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.author .bio p:last-child {
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+.author h3 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.author .twitter {
+    margin-bottom: 5px;
+}
+
+.author .portrait {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.portrait {
+    border-radius: 100px;
+    display: block;
+}
