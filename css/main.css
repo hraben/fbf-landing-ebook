@@ -30,7 +30,10 @@ p {
   font-family: 'Ubuntu', sans-serif;
 }
 
-h1,
+h1 {
+  color: #0091EA;
+}
+
 h2,
 h3,
 h4,
@@ -78,8 +81,8 @@ a.bttn {
 }
 
 a.bttn:hover {
-  background: #6e5eb2;
-  border-color: #6e5eb2;
+  background: #0091EA;
+  border-color: #0091EA;
   color: #f1eeed;
 }
 
@@ -94,10 +97,10 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #6e5eb2;
+  color: #0091EA;
 }
 a:visited {
-  color: #a399cd;
+  color: #0091EA;
 }
 a:active, a:hover {
   color: #f4cd13;
@@ -164,15 +167,6 @@ ol {
 ul li,
 ol li {
   margin-bottom: 10px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #413b52;
 }
 
 .section-wrapper {
@@ -363,10 +357,10 @@ p.header-sub {
           transform: rotateY(360deg);
   -webkit-transition: all 1s;
           transition: all 1s;
-  color: #a399cd;
+  color: #0091EA;
 }
 .logo span {
-  color: #6e5eb2;
+  color: #0091EA;
 }
 
 .navigation {
@@ -384,7 +378,7 @@ p.header-sub {
   border-bottom: 1px solid transparent;
 }
 .navigation .navbar-nav > li > a:hover {
-  border-bottom: 1px solid #6e5eb2;
+  border-bottom: 1px solid #0091EA;
 }
 
 .cta-2 {
@@ -397,7 +391,7 @@ p.header-sub {
 }
 .cta-2 .bttn:hover {
   color: #413b52;
-  background-color: #a399cd;
+  background-color: #0091EA;
 }
 
 .question h3 {
