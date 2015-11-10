@@ -1,6 +1,6 @@
 $black: #000;
 $black-smooth: #111111;
-$blue:  #2c97de;
+$blue:  #42A5f5;
 $green: #2cbf6d;
 $gray: #e2e1e4;
 $dark-gray: lighten(gray, 15%);;
@@ -9,7 +9,7 @@ $purple-light: #a399cd;
 $red: #d66039;
 $white: #fff;
 
-$bg-main-color: $purple-dark;
+$bg-main-color: $blue;
 // $bg-second-color:
 
 $bg-lighter:    $white;//lighten($bg-main-color, 40%);
@@ -21,13 +21,13 @@ $bg-darker:     #121212;//darken($bg-main-color, 40%);
 $bg-gray:       #747d93;
 $bg-dark-green: #5b8068;
 
-$link: $purple-dark;
-$link-visited: #a399cd;
+$link: $blue;
+$link-visited: $blue;//#a399cd;
 $link-hover: #f4cd13;
 $link-active: #f4cd13;
 
 $text-main-color: #413b52;
-$text-second-color: $purple-light;//#f1eeed;
+$text-second-color: $blue;//#f1eeed;
 $text-light:      $white;
 $text-lighter:  #fff;
 $text-dark:     #000;
