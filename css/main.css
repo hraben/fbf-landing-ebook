@@ -493,6 +493,7 @@ p.header-sub {
 }
 
 #packages {
+  margin-top: 40px;
   padding-top: 40px;
 }
 #packages .team {
